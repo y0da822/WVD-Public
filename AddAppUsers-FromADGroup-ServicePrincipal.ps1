@@ -6,6 +6,9 @@ Tested with Windows AD only, not Azure AD
 .PARAMETER adGroupName
 Specifies the source group that the WVD App Group will update from.
 
+.PARAMETER aadTenantID
+Specifies the Azure tenant ID that you want to login to
+
 .PARAMETER wvdTenantName
 Specifies the Tenant name for the WVD service.
 
@@ -15,11 +18,17 @@ Specifies the Host Pool name for the WVD service.
 .PARAMETER wvdAppGroupName
 Specifies the App Group users are added to.
 
+.PARAMETER spID
+Specifies the service principal id you want to login to
+
+.PARAMETER spPlainTextPassword
+Specifies the service principal password in plain text
+
 .NOTES
 Script is offered as-is with no warranty
 Test it before you trust it
-Author      : Travis Roberts
-Website     : www.ciraltos.com
+Original Author : Travis Roberts
+Modified Author	: y0da822
 Version     : 1.0.0.0 Initial Build
 #>
 
