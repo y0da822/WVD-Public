@@ -1,0 +1,1 @@
+Set-RdsHostPool -Tenant <tenantname> -Name <hostpoolname> -CustomRdpProperty 'use multimon:i:0'
