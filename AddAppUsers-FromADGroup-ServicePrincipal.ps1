@@ -63,8 +63,8 @@ foreach ($module in $reqModule) {
     }
 }
 
-$spPlainTextPassword = ConvertTo-SecureString $spPlainTextPassword -AsPlainText -Force
-$spCreds = New-Object System.Management.Automation.PSCredential ($spID, $spPlainTextPassword)
+$spPlainTextPasswordSecure = ConvertTo-SecureString $spPlainTextPassword -AsPlainText -Force
+$spCreds = New-Object System.Management.Automation.PSCredential ($spID, $spPlainTextPasswordSecure)
 # Verify the user is logged in via service principal
 $rdsContext = get-rdscontext -ErrorAction SilentlyContinue
 if ($rdsContext -eq $null) {
