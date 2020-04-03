@@ -43,9 +43,9 @@ param (
     [Parameter (Mandatory = $true)]
     [string] $wvdHostPoolName,
     [Parameter (Mandatory = $true)]
-    [string] $wvdAppGroupName
+    [string] $wvdAppGroupName,
 	[Parameter (Mandatory = $true)]
-    [string] $spID
+    [string] $spID,
 	[Parameter (Mandatory = $true)]
     [string] $spPlainTextPassword
 )
